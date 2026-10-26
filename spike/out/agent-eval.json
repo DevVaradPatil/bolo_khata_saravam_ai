@@ -1,0 +1,230 @@
+{
+  "sarvam-105b-conversations": [
+    {
+      "utterance": "रमेश डेयरी वाले को 350 का उधार लिखो दूध और पनीर।",
+      "ok": true,
+      "ms": 478,
+      "calls": [
+        {
+          "name": "propose_entry",
+          "args": {
+            "customer_id": "c2",
+            "type": "credit",
+            "amount": 350,
+            "note": "दूध और पनीर"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "Sunita Patil ने आज ₹500 जमा किए cash में।",
+      "ok": true,
+      "ms": 375,
+      "calls": [
+        {
+          "name": "propose_entry",
+          "args": {
+            "customer_id": "c3",
+            "type": "payment",
+            "amount": 500,
+            "note": "cash"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "गणेश काळे यांना दोनशे वीस रुपयांचे उधार लिहा साखर आणि चहा powder",
+      "ok": true,
+      "ms": 284,
+      "calls": [
+        {
+          "name": "propose_entry",
+          "args": {
+            "customer_id": "c4",
+            "type": "credit",
+            "amount": 220,
+            "note": "साखर आणि चहा powder"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "रमेश को 200 का उधार लिखो",
+      "ok": true,
+      "ms": 197,
+      "calls": [],
+      "reply": "रमेश कुमार या रमेश डेयरी, कौन से?"
+    },
+    {
+      "utterance": "प्रिया जी का कितना बाकी है?",
+      "ok": true,
+      "ms": 190,
+      "calls": [
+        {
+          "name": "get_balance",
+          "args": {
+            "customer_id": "c6"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "Abdul bhai ne dhai sau diye",
+      "ok": true,
+      "ms": 212,
+      "calls": [
+        {
+          "name": "propose_entry",
+          "args": {
+            "customer_id": "c5",
+            "type": "payment",
+            "amount": 250,
+            "note": "Abdul bhai payment"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "नया ग्राहक जोड़ो, महेश जाधव, नंबर 98220 12345",
+      "ok": true,
+      "ms": 253,
+      "calls": [
+        {
+          "name": "propose_customer",
+          "args": {
+            "name": "Mahesh Jadhav",
+            "phone": "9822012345"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "अभी वाली एंट्री गलत है, कैंसल करो",
+      "ok": true,
+      "ms": 173,
+      "calls": [
+        {
+          "name": "propose_undo",
+          "args": {}
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "आज कितना उधार गया और कितना वसूल हुआ?",
+      "ok": true,
+      "ms": 220,
+      "calls": [
+        {
+          "name": "get_summary",
+          "args": {
+            "period": "today"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "सबसे ज्यादा पैसे किसके बाकी हैं?",
+      "ok": true,
+      "ms": 165,
+      "calls": [
+        {
+          "name": "list_dues",
+          "args": {}
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "Ramesh Kumar ko saade teen sau ka saamaan diya, paise baad mein",
+      "ok": true,
+      "ms": 239,
+      "calls": [
+        {
+          "name": "propose_entry",
+          "args": {
+            "customer_id": "c1",
+            "type": "credit",
+            "amount": 350,
+            "note": "saamaan diya"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "सुनीता ताईंनी हजार रुपये दिले",
+      "ok": true,
+      "ms": 240,
+      "calls": [
+        {
+          "name": "propose_entry",
+          "args": {
+            "customer_id": "c3",
+            "type": "payment",
+            "amount": 1000,
+            "note": "सुनीता ताईंनी दिले"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "Priya Sharma ka 1500 mein se 1000 aa gaya",
+      "ok": true,
+      "ms": 236,
+      "calls": [
+        {
+          "name": "propose_entry",
+          "args": {
+            "customer_id": "c6",
+            "type": "payment",
+            "amount": 1000,
+            "note": "Partial payment received"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "गणेश को डेढ़ हज़ार का उधार, और सुनीता से 300 मिले",
+      "ok": true,
+      "ms": 276,
+      "calls": [
+        {
+          "name": "propose_entry",
+          "args": {
+            "customer_id": "c4",
+            "type": "credit",
+            "amount": 1500,
+            "note": "उधार"
+          }
+        },
+        {
+          "name": "propose_entry",
+          "args": {
+            "customer_id": "c3",
+            "type": "payment",
+            "amount": 300,
+            "note": "मिले"
+          }
+        }
+      ],
+      "reply": ""
+    },
+    {
+      "utterance": "आज मौसम कैसा है?",
+      "ok": true,
+      "ms": 171,
+      "calls": [],
+      "reply": "मैं सिर्फ खता संभालता हूँ, मौसम की जानकारी नहीं दे सकता।"
+    }
+  ]
+}
