@@ -43,3 +43,9 @@ spike/node_modules
 
 .vercel
 .env*
+deck/*.aux
+deck/*.log
+deck/*.nav
+deck/*.out
+deck/*.snm
+deck/*.toc
