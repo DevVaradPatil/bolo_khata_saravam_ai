@@ -19,6 +19,7 @@ export function VoicePanel() {
   async function send(body: FormData) {
     setBusy(true);
     setSaved(false);
+    setTurn(null);
     try {
       const res = await fetch("/api/voice", { method: "POST", body });
       const data = await res.json();
@@ -50,6 +51,7 @@ export function VoicePanel() {
       r.start();
       rec.current = r;
       setRecording(true);
+      setTurn(null);
       // Sarvam's sync STT takes up to 30 s.
       timer.current = setTimeout(() => r.state === "recording" && r.stop(), 25_000);
     } catch {
